@@ -1,14 +1,24 @@
 export function valida(input) {
   const tipoDeInput = input.dataset.tipo;
-  console.log(tipoDeInput);
-  // console.log(input.validity.valid) de vuelve un valor true o false dependiendo si esta con algun elemento el input o no
-  if(input.validity.valid){
-    input.parentElement.classList.remove("input-container--invalid");
-    input.parentElement.querySelector(".input-message-error").innerHTML = "";
+  if(tipoDeInput == 'mensaje' && input.value.length >0){
+      if(input.value.length > 300){
+        input.parentElement.classList.add('input-container--invalid');
+        input.parentElement.querySelector(".input-message-error").innerHTML = "El mensaje debe contener máximo 300 caracteres";
+      }else{
+        input.parentElement.classList.remove("input-container--invalid");
+        input.parentElement.querySelector(".input-message-error").innerHTML = "";
+      }
   }else{
-    input.parentElement.classList.add('input-container--invalid');
-    input.parentElement.querySelector(".input-message-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
+    // console.log(input.validity.valid) de vuelve un valor true o false dependiendo si esta con algun elemento el input o no
+    if(input.validity.valid){
+      input.parentElement.classList.remove("input-container--invalid");
+      input.parentElement.querySelector(".input-message-error").innerHTML = "";
+    }else{
+      input.parentElement.classList.add('input-container--invalid');
+      input.parentElement.querySelector(".input-message-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
+    }
   }
+  
 }
 
 const tipoDeErrores = [
@@ -31,18 +41,19 @@ const mensajesDeError = {
   },
   mensaje: {
     valueMissing: "El campo mensaje no puede estar vacío",
+    patternMismatch: "Debe contener máximo 300 caracteres",
   },
 };
 
 function mostrarMensajeDeError(tipoDeInput, input) {
   let mensaje = "";
   tipoDeErrores.forEach((error) => {
-    console.log(error);
-    console.log(input.validity[error]);
+    // console.log(error);
+    // console.log(input.validity[error]);
     if (input.validity[error]) {
-      console.log(tipoDeInput, error);
-      console.log(input.validity[error]);
-      console.log(mensajesDeError[tipoDeInput][error]);
+      // console.log(tipoDeInput, error);
+      // console.log(input.validity[error]);
+      // console.log(mensajesDeError[tipoDeInput][error]);
       mensaje = mensajesDeError[tipoDeInput][error];
     }
   });

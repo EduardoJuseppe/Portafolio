@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) and (max-width: 1399px){
+    .divImgContacto{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        padding-left: initial;
+    }
+    .btnEnviar{
+        width: 35%;
+        font-size: 1.1rem;
+        padding: 1.1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+    .divImgContacto{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        padding-left: initial;
+    }
+    .btnEnviar{
+        width: 50%;
+        font-size: 0.75rem;
+        padding: 0.75rem;
+        font-size: 0.75rem;
+    }
+    .input-label{
+        font-size: 0.65rem;
+    }
+    .textarea-label{
+        font-size: 0.75rem;
+    }
+    #Mensaje{
+        height: 5.5rem;
+    }
+    .textarea-container{
+        margin-top: 1rem;
+    }
+    .input-container--invalid .input-message-error {
+        font-size: 0.75rem;
+      }
+}

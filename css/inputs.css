@@ -31,10 +31,6 @@
   border-bottom: 1px solid #2A7AE4;
 }
 
-#Mensaje{
-  height: 6.25rem;
-}
-
 .input::placeholder {
   visibility: hidden;
   color: rgba(100, 107, 107, 0.785);;
@@ -91,8 +87,12 @@
   width: 100%;
   min-height: 3rem;
   border: none;
-    resize: none;
-    outline: none;
+  resize: none;
+  outline: none;
+}
+
+#Mensaje{
+  height: 7rem;
 }
 
 .textarea:focus{
@@ -102,7 +102,7 @@
 
 .textarea-container {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-weight: var(--font-weigth-input);
 }
@@ -117,7 +117,7 @@
 
 .textarea-label {
   position: absolute;
-  top: 1.5rem;
+  top: 1.25rem;
   left: 0.5rem;
   font-size: var(--font-size-input-label);
   transition: all 0.25s;
@@ -125,8 +125,8 @@
 
 .textarea:not(:placeholder-shown) + .textarea-label,
 .textarea:focus + .textarea-label {
-  font-size: 1.275rem;
-  top: -1.55rem;
+  font-size: 0.875rem;
+  top: -1.25rem;
   transition: all 0.25s;
 }
 
