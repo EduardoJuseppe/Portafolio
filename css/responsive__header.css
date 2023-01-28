@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) and (max-width: 1399px){
+    nav ul li:not(:last-child){
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+    label{
+        font-size: 0.75rem;
+    }
+    nav ul li:not(:last-child){
+        display: none;
+    }
+    li{
+        font-size: 0.75rem;
+    }
+}
+

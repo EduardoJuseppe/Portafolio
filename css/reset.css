@@ -1,0 +1,24 @@
+:root {
+    --letras-header: #464646; 
+    --fondoGris: #EDEDED;
+    --fondoAzul: #c6ddfc;
+}
+body{
+    background-color: var(--fondoGris);
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+label,li {
+    color: var(--letras-header);
+}
+h1,h2,p{
+    margin: 0;
+    padding: 0;
+}

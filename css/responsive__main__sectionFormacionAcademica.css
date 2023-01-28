@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) and (max-width: 1399px){
+    .sectionFormacionAcademica{
+        padding: 2rem 0;
+    }
+    .cardImg{
+        height: 10vh;
+    }
+    .tituloCard{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+    .sectionFormacionAcademica{
+        padding: 1rem 0;
+    }
+    .tituloFormacion{
+        font-size: 1.25rem;
+    }
+    .divCardFormacion{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .cardFormacion{
+        width: 100%;
+    }
+    .cardImg{
+        height: 10vh;
+    }
+    .imgCard{
+        width: 35%;
+        height: 70%;   
+    }
+    .tituloCard{
+        font-size: 0.75rem;
+    }
+    .textoCard{
+        font-size: 0.65rem;
+    }
+}

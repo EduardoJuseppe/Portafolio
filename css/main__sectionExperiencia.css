@@ -1,0 +1,60 @@
+.tituloExperiencia{
+    margin-top: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.sectionExperiencia{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    gap: 3rem;
+}
+.cardProyecto{
+    display: flex;
+    height: 40vh;
+}
+.cardProyecto:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.cardProyecto:nth-child(2n) .divBotones{
+    padding-left: 0;
+}
+.divCaptura{
+    width: 65%;
+}
+.imgCaptura{
+    width: 100%;
+    height: 100%;
+}
+.divBotones{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-left: 1.25rem;
+}
+.tituloBotones{
+    color: #464646;
+}
+.textoBotones{
+    color: #464646;
+}
+.divbtn{
+    display: flex;
+    gap: 0.65rem;
+}
+.btn{
+    padding: 0.95rem 1.2rem;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+.btn:nth-child(2){
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+}
+
+

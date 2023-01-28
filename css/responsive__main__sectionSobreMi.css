@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) and (max-width: 1399px){
+    .sectionSobreMi div div{
+        width: 100%;
+    }
+    #tituloSobreMi{
+        font-size: 2rem;
+        text-shadow: 1.5px 1.5px;
+    }
+    .textoNormal{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+    .sectionSobreMi div div{
+        width: 100%;
+    }
+    #tituloSobreMi{
+        font-size: 1.25rem;
+        text-shadow: 1px 1px;
+    }
+    .textoNormal{
+        font-size: 0.75rem;
+    }
+}

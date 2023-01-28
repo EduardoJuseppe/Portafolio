@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) and (max-width: 1399px){
+    .divTexto{
+        width: calc(75% -3.5rem);
+        padding-right: 3.5rem;
+    }
+    #textoHola{
+        font-size: 1.5rem;
+        text-shadow: 1px 1px;
+    }
+    #textoSoy{
+        font-size: 1rem;
+    }
+    #divLink ul{
+        gap: 1.25em;
+    }
+    #divLink ul li{
+        font-size: 1rem;
+    }
+    #imagenYo{
+        width: 25%;
+        border-radius: 200px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+    .sectionTextoImagen{
+        flex-direction: column-reverse;
+    }
+    .divTexto{
+        width: 100%;
+        padding-top: 1rem;
+    }
+    #textoHola{
+        font-size: 1.15rem;
+        text-shadow: 1px 1px;
+    }
+    #textoSoy{
+        font-size: 0.75rem;
+    }
+    #divLink ul{
+        gap: initial;
+        justify-content: space-between;
+    }
+    #divLink ul li{
+        font-size: 0.75rem;
+    }
+}
+
