@@ -1,4 +1,6 @@
-particlesJS("particleCanvas-Blue", {
+
+  
+particlesJS(particleCanvas-Blue, {
 	particles: {
 		number: {
 			value: 100,

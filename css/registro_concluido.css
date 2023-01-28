@@ -188,7 +188,7 @@ body {
   animation: outerRotate1 15s infinite linear;
 }
 .e-loadholder .m-loader .e-text {
-  font-size: 10px;
+  font-size: 1px;
   font-size: 1rem;
   line-height: 130px;
   position: absolute;
