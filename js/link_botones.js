@@ -1,5 +1,6 @@
 const btnRepositorio = document.querySelectorAll(".btnBlanco");
 const btnDemo = document.querySelectorAll(".btnAzul");
+const btnEnviar = document.querySelector(".btnEnviar");
 
 const repositorios = (e) =>{
     const boton = e.target.id;
@@ -52,6 +53,7 @@ btnRepositorio.forEach(boton => {
 btnDemo.forEach(boton => {
     boton.addEventListener("click",demos);
 });
+
 
 
 
