@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/inputs.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/responsive__header.css">
     <link rel="stylesheet" href="css/main__sectionTextoImagen.css">
@@ -37,7 +38,7 @@
                 <li><a href="#Hobbies">Hobbies</a></li>
                 <li><a href="#Formacion">Formacion</a></li>
                 <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="https://www.google.com/intl/es-419/gmail/about/">larios.juseppeduardo@gmail.com</a></li>
+                <li><a href="#Contacto">larios.juseppeduardo@gmail.com</a></li>
             </ul>
         </nav>
     </header>
@@ -299,11 +300,45 @@
                 </div>
             </div>
         </section>
+        <section class="sectionContacto" id="Contacto">
+            <div class="divContacto">
+                <div class="divImgContacto">
+                    <img class="imgContacto" src="img/contacto.jpg"/>
+                </div>
+                <form class="form">
+                    <h2 class="tituloContacto">Contacto</h2>
+                    <label>¿Quieres contactarme? <br> Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</label>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
+                        <label class="input-label" for="email">Email</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Asunto" required pattern="[\s\S]{0,50}" data-tipo="asunto">
+                        <label class="input-label" for="name">Asunto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="textarea-container">
+                        <!-- <input name="name" id="Mensaje" class="input" type="text" placeholder="Mensaje" required data-tipo="mensaje"> -->
+                        <textarea name="name" id="Mensaje" class="textarea" type="text" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+                        <label class="textarea-label" for="name">Mensaje</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <button class="btnEnviar">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer></footer>
 
     <script src="https://kit.fontawesome.com/acf9a5f092.js" crossorigin="anonymous"></script>
     <script src="js/link_botones.js"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 
 </html>
