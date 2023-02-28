@@ -1,13 +1,12 @@
 @media screen and (min-width: 768px) and (max-width: 1399px){
-    .sectionSkillsHobbies{
-        gap: initial;
-        justify-content: space-between;
-    }
     .cardBlanca{
-        width: calc(31% - 1rem);
+        width: calc(33% - 3rem);
         height: 8vh;
         padding: 0.75rem;
         font-size: 1rem;
+    }
+    .cardBlanca:nth-child(3n){
+        width: calc(33% - 2rem);
     }
     .img{
         max-width: 35px;
@@ -15,18 +14,17 @@
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px){
-    .sectionSkillsHobbies{
-        gap: initial;
-        justify-content: space-between;
-    }
     .tituloSkills{
         font-size: 1.25rem;
     }
     .cardBlanca{
-        width: calc(49% - 1rem);
+        width: calc(50% - 2rem);
         height: 6vh;
         padding: 0.5rem;
         font-size: 0.8rem;
+    }
+    .cardBlanca:nth-child(2n){
+        width: calc(50% - 1rem);
     }
     .img{
         max-width: 25px;
